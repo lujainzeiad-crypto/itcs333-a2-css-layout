@@ -1,7 +1,66 @@
-/* ITCS333 A2 starter — implement the design spec from index.html here.
-   See README rubric for the graded checks. Do not use inline styles. */
-
-/* TODO: style #site-header (padding, border-bottom) */
-/* TODO: style .card (padding, border, gap) and .card-grid (display, gap, 3 columns) */
-/* TODO: style form inputs (padding) and a :focus state */
-/* TODO: add a @media (max-width: 700px) query collapsing .card-grid to one column */
+#site-header {
+ padding: 20px;
+ border-bottom: 4px solid #6c63a8;
+ background-color: #ffd6eb;
+}
+h2 {
+ color: #40534a;
+}
+.main-nav a {
+ margin-right: 12px;
+ color: red;
+}
+.main-nav a:hover {
+ background-color: #f7f6fb;
+ color:red;
+}
+.content-section {
+ margin: 20px;
+}
+.schedule-table {
+ background-color:#FBBBB9;
+ border-collapse:#394867;
+ width:100%;
+}
+.schedule-table th,
+.schedule-table td {
+ border: 1px solid #cccccc;
+ padding: 8px;
+ text-align: left;
+}
+.card-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+}
+.card {
+background-color:#E7A1B0;
+ padding: 16px;
+ border: 2px solid #333;
+ border-radius: 6px;
+ margin: 5px;
+}
+.register-form label {
+ display: block;
+ margin-top: 10px;
+}
+.register-form input {
+ padding: 8px;
+ border: 1px solid #cccccc;
+}
+.register-form input:focus {
+ border-color: #6c63a8;
+}
+.btn-primary {
+ padding: 8px 16px;
+ margin-top: 10px;
+}
+.site-footer {
+ padding: 16px;
+ text-align: center;
+}
+@media (max-width: 700px) {
+ .card-grid {
+   grid-template-columns: 1fr;
+ }
+}
